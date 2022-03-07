@@ -8,12 +8,11 @@
 import UIKit
 import ADXLibrary
 
-class NativeAdView: UIView, ADXNativeAdRendering {
-
+class NativeAdView: UIView {
     @IBOutlet var contentsView: UIView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var mainTextLabel: UILabel!
-    @IBOutlet var callToActionLabel: UILabel!
+    @IBOutlet var callToActionButton: UIButton!
     @IBOutlet var iconImageView: UIImageView!
     @IBOutlet var privacyInformationIconImageView: UIImageView!
     @IBOutlet var mainImageView: UIImageView!
@@ -21,13 +20,11 @@ class NativeAdView: UIView, ADXNativeAdRendering {
     convenience init() {
         self.init(frame: .zero)
         initView()
-
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         initView()
-
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,32 +39,30 @@ class NativeAdView: UIView, ADXNativeAdRendering {
         contentsView.frame = self.bounds
         contentsView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
-    
-    override func layoutSubviews () {
-        super.layoutSubviews()
-    }
+}
 
-    func nativeMainTextLabel() -> UILabel {
+extension NativeAdView: ADXNativeAdRendering {
+    func nativeMainTextLabel() -> UILabel! {
         return self.mainTextLabel
     }
     
-    func nativeTitleTextLabel() -> UILabel {
+    func nativeTitleTextLabel() -> UILabel! {
         return self.titleLabel
     }
     
-    func nativeCallToActionTextLabel() -> UILabel {
-        return self.callToActionLabel
+    func nativeCallToActionButton() -> UIButton! {
+        return self.callToActionButton
     }
     
-    func nativeIconImageView() -> UIImageView {
+    func nativeIconImageView() -> UIImageView! {
         return self.iconImageView
     }
-    
-    func nativeMainImageView() -> UIImageView {
+
+    func nativeMainImageView() -> UIImageView! {
         return self.mainImageView
     }
     
-    func nativePrivacyInformationIconImageView() -> UIImageView {
+    func nativePrivacyInformationIconImageView() -> UIImageView! {
         return self.privacyInformationIconImageView
     }
 }

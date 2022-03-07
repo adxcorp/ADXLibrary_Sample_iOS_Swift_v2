@@ -1,5 +1,5 @@
 //
-//  NativeAdViewController.swift
+//  NativeViewController.swift
 //  ADXSampleSwift
 //
 //  Copyright © 2017 AD(X) Corp. All rights reserved.
@@ -8,7 +8,7 @@
 import UIKit
 import ADXLibrary
 
-class NativeAdViewController: UIViewController {
+class NativeViewController: UIViewController {
     
     var nativeAd: ADXNativeAd?
     
@@ -27,11 +27,12 @@ class NativeAdViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         ADXNativeAdFactory.sharedInstance().remove(self)
     }
 }
 
-extension NativeAdViewController: ADXNativeAdFactoryDelegate, ADXNativeAdDelegate {
+extension NativeViewController: ADXNativeAdFactoryDelegate, ADXNativeAdDelegate {
     
     // MARK: - ADXNativeAdFactoryDelegate
     public func onSuccess(_ adUnitId: String!, nativeAd: ADXNativeAd!) {
@@ -40,10 +41,10 @@ extension NativeAdViewController: ADXNativeAdFactoryDelegate, ADXNativeAdDelegat
             self.nativeAd?.delegate = self
             
             let nativeAdView = ADXNativeAdFactory.sharedInstance().getNativeAdView(ADX_NATIVE_AD_UNIT_ID)
-            nativeAdView?.frame = CGRect(x: (UIScreen.main.bounds.width - 300.0)/2
-                                         , y: 100.0
-                                         , width: 300.0
-                                         , height: 270.0)
+            nativeAdView?.frame = CGRect(x: (UIScreen.main.bounds.width - 320.0)/2,
+                                         y: 100.0,
+                                         width: 320.0,
+                                         height: 300.0)
             self.view.addSubview(nativeAdView!)
             
         } else {
@@ -52,7 +53,7 @@ extension NativeAdViewController: ADXNativeAdFactoryDelegate, ADXNativeAdDelegat
     }
     
     public func onFailure(_ adUnitId: String!) {
-        print("onFailure :", adUnitId!)
+        print("onFailure : ", adUnitId!)
     }
     
     // MARK: - ADXNativeAdDelegate

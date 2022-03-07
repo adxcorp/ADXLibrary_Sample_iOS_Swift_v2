@@ -1,5 +1,5 @@
 //
-//  RewardedAdViewController.swift
+//  RewardedViewController.swift
 //  ADXSampleSwift
 //
 //  Copyright © 2017 AD(X) Corp. All rights reserved.
@@ -8,7 +8,7 @@
 import UIKit
 import ADXLibrary
 
-class RewardedAdViewController: UIViewController {
+class RewardedViewController: UIViewController {
     fileprivate var rewardedAd: ADXRewardedAd!
     
     override func viewDidLoad() {
@@ -16,7 +16,6 @@ class RewardedAdViewController: UIViewController {
         
         rewardedAd = ADXRewardedAd(adUnitId: ADX_REWARDED_AD_UNIT_ID)
         rewardedAd.delegate = self
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func loadAd(_ sender: Any) {
@@ -30,7 +29,7 @@ class RewardedAdViewController: UIViewController {
     }
 }
 
-extension RewardedAdViewController: ADXRewardedAdDelegate {
+extension RewardedViewController: ADXRewardedAdDelegate {
     func rewardedAdDidLoad(_ rewardedAd: ADXRewardedAd) {
         print("rewardedAdDidLoad")
     }

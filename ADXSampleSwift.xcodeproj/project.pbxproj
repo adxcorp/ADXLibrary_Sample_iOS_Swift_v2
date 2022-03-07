@@ -7,49 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20BA616CF6161F1F17F9989D /* Pods_ADXSampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */; };
-		CCD9BA1027BA36930070B030 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD9BA0E27BA36930070B030 /* NativeAdView.xib */; };
-		CCD9BA1127BA36930070B030 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9BA0F27BA36930070B030 /* NativeView.swift */; };
-		CCDE27B827B5478C00602F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27B727B5478C00602F1A /* AppDelegate.swift */; };
-		CCDE27BC27B5478C00602F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27BB27B5478C00602F1A /* ViewController.swift */; };
-		CCDE27BF27B5478C00602F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDE27BD27B5478C00602F1A /* Main.storyboard */; };
-		CCDE27C127B5478D00602F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDE27C027B5478D00602F1A /* Assets.xcassets */; };
-		CCDE27C427B5478D00602F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDE27C227B5478D00602F1A /* LaunchScreen.storyboard */; };
-		CCDE27D327B5F4CE00602F1A /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27D227B5F4CE00602F1A /* BannerViewController.swift */; };
-		CCDE27D527B5F4D800602F1A /* MRECViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27D427B5F4D800602F1A /* MRECViewController.swift */; };
-		CCDE27D727B5F4E100602F1A /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27D627B5F4E100602F1A /* InterstitialViewController.swift */; };
-		CCDE27D927B5F4F100602F1A /* NativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27D827B5F4F100602F1A /* NativeAdViewController.swift */; };
-		CCDE27DB27B5F4FD00602F1A /* NativeAdPlacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27DA27B5F4FD00602F1A /* NativeAdPlacerViewController.swift */; };
-		CCDE27DD27B5F51000602F1A /* RewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE27DC27B5F51000602F1A /* RewardedAdViewController.swift */; };
+		64A9A06FDFBFA5A8324A008D /* Pods_ADXSampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */; };
+		CC4F010627D2094400847E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F010527D2094400847E76 /* AppDelegate.swift */; };
+		CC4F010D27D2094400847E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4F010B27D2094400847E76 /* Main.storyboard */; };
+		CC4F010F27D2094500847E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4F010E27D2094500847E76 /* Assets.xcassets */; };
+		CC4F011227D2094500847E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4F011027D2094500847E76 /* LaunchScreen.storyboard */; };
+		CC4F012627D209FF00847E76 /* NativeAdPlacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011827D209FF00847E76 /* NativeAdPlacerViewController.swift */; };
+		CC4F012727D209FF00847E76 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4F011A27D209FF00847E76 /* NativeAdView.xib */; };
+		CC4F012827D209FF00847E76 /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011B27D209FF00847E76 /* NativeAdView.swift */; };
+		CC4F012927D209FF00847E76 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011C27D209FF00847E76 /* NativeViewController.swift */; };
+		CC4F012A27D209FF00847E76 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011E27D209FF00847E76 /* BannerViewController.swift */; };
+		CC4F012B27D209FF00847E76 /* MRECViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011F27D209FF00847E76 /* MRECViewController.swift */; };
+		CC4F012C27D209FF00847E76 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012127D209FF00847E76 /* InterstitialViewController.swift */; };
+		CC4F012D27D209FF00847E76 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012227D209FF00847E76 /* MainViewController.swift */; };
+		CC4F012E27D209FF00847E76 /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012427D209FF00847E76 /* RewardedViewController.swift */; };
+		CC4F012F27D209FF00847E76 /* AdMobRewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B334811F6BE02B3575710DF /* Pods-ADXSampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		CCD9BA0E27BA36930070B030 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
-		CCD9BA0F27BA36930070B030 /* NativeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
-		CCDE27B427B5478C00602F1A /* ADXSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADXSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCDE27B727B5478C00602F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCDE27BB27B5478C00602F1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CCDE27BE27B5478C00602F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CCDE27C027B5478D00602F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CCDE27C327B5478D00602F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CCDE27C527B5478D00602F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCDE27D227B5F4CE00602F1A /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
-		CCDE27D427B5F4D800602F1A /* MRECViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRECViewController.swift; sourceTree = "<group>"; };
-		CCDE27D627B5F4E100602F1A /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
-		CCDE27D827B5F4F100602F1A /* NativeAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdViewController.swift; sourceTree = "<group>"; };
-		CCDE27DA27B5F4FD00602F1A /* NativeAdPlacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdPlacerViewController.swift; sourceTree = "<group>"; };
-		CCDE27DC27B5F51000602F1A /* RewardedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdViewController.swift; sourceTree = "<group>"; };
+		CC4F010327D2094400847E76 /* ADXSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADXSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4F010527D2094400847E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC4F010C27D2094400847E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC4F010E27D2094500847E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC4F011127D2094500847E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC4F011327D2094500847E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4F011827D209FF00847E76 /* NativeAdPlacerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdPlacerViewController.swift; sourceTree = "<group>"; };
+		CC4F011A27D209FF00847E76 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		CC4F011B27D209FF00847E76 /* NativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdView.swift; sourceTree = "<group>"; };
+		CC4F011C27D209FF00847E76 /* NativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		CC4F011E27D209FF00847E76 /* BannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		CC4F011F27D209FF00847E76 /* MRECViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRECViewController.swift; sourceTree = "<group>"; };
+		CC4F012127D209FF00847E76 /* InterstitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
+		CC4F012227D209FF00847E76 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CC4F012427D209FF00847E76 /* RewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
+		CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdMobRewardedViewController.swift; sourceTree = "<group>"; };
 		DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.release.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CCDE27B127B5478C00602F1A /* Frameworks */ = {
+		CC4F010027D2094400847E76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20BA616CF6161F1F17F9989D /* Pods_ADXSampleSwift.framework in Frameworks */,
+				64A9A06FDFBFA5A8324A008D /* Pods_ADXSampleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,19 +75,80 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CCD9BA0D27BA36930070B030 /* NativeView */ = {
+		CC4F010427D2094400847E76 /* ADXSampleSwift */ = {
 			isa = PBXGroup;
 			children = (
-				CCD9BA0F27BA36930070B030 /* NativeView.swift */,
-				CCD9BA0E27BA36930070B030 /* NativeAdView.xib */,
+				CC4F011D27D209FF00847E76 /* Banner */,
+				CC4F012027D209FF00847E76 /* Interstitial */,
+				CC4F011727D209FF00847E76 /* Native */,
+				CC4F012327D209FF00847E76 /* Rewarded */,
+				CC4F010527D2094400847E76 /* AppDelegate.swift */,
+				CC4F012227D209FF00847E76 /* MainViewController.swift */,
+				CC4F010B27D2094400847E76 /* Main.storyboard */,
+				CC4F013027D20A1100847E76 /* Support Files */,
 			);
-			path = NativeView;
+			path = ADXSampleSwift;
+			sourceTree = "<group>";
+		};
+		CC4F011727D209FF00847E76 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				CC4F011927D209FF00847E76 /* NativeAdView */,
+				CC4F011C27D209FF00847E76 /* NativeViewController.swift */,
+				CC4F011827D209FF00847E76 /* NativeAdPlacerViewController.swift */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		CC4F011927D209FF00847E76 /* NativeAdView */ = {
+			isa = PBXGroup;
+			children = (
+				CC4F011B27D209FF00847E76 /* NativeAdView.swift */,
+				CC4F011A27D209FF00847E76 /* NativeAdView.xib */,
+			);
+			path = NativeAdView;
+			sourceTree = "<group>";
+		};
+		CC4F011D27D209FF00847E76 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				CC4F011E27D209FF00847E76 /* BannerViewController.swift */,
+				CC4F011F27D209FF00847E76 /* MRECViewController.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		CC4F012027D209FF00847E76 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				CC4F012127D209FF00847E76 /* InterstitialViewController.swift */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		CC4F012327D209FF00847E76 /* Rewarded */ = {
+			isa = PBXGroup;
+			children = (
+				CC4F012427D209FF00847E76 /* RewardedViewController.swift */,
+				CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */,
+			);
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		CC4F013027D20A1100847E76 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC4F011027D2094500847E76 /* LaunchScreen.storyboard */,
+				CC4F010E27D2094500847E76 /* Assets.xcassets */,
+				CC4F011327D2094500847E76 /* Info.plist */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 		CCDE27AB27B5478C00602F1A = {
 			isa = PBXGroup;
 			children = (
-				CCDE27B627B5478C00602F1A /* ADXSampleSwift */,
+				CC4F010427D2094400847E76 /* ADXSampleSwift */,
 				CCDE27B527B5478C00602F1A /* Products */,
 				A254C8C9B81FF648458FFE46 /* Pods */,
 				8AB786D7EBFA2643BD314064 /* Frameworks */,
@@ -95,84 +158,24 @@
 		CCDE27B527B5478C00602F1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCDE27B427B5478C00602F1A /* ADXSampleSwift.app */,
+				CC4F010327D2094400847E76 /* ADXSampleSwift.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CCDE27B627B5478C00602F1A /* ADXSampleSwift */ = {
-			isa = PBXGroup;
-			children = (
-				CCDE27CD27B5490800602F1A /* Banner */,
-				CCDE27CE27B5490D00602F1A /* Interstitial */,
-				CCDE27CF27B5491300602F1A /* Native */,
-				CCDE27D027B5491700602F1A /* Rewarded */,
-				CCDE27B727B5478C00602F1A /* AppDelegate.swift */,
-				CCDE27BB27B5478C00602F1A /* ViewController.swift */,
-				CCDE27C227B5478D00602F1A /* LaunchScreen.storyboard */,
-				CCDE27BD27B5478C00602F1A /* Main.storyboard */,
-				CCDE27D127B5492500602F1A /* Support Files */,
-			);
-			path = ADXSampleSwift;
-			sourceTree = "<group>";
-		};
-		CCDE27CD27B5490800602F1A /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				CCDE27D227B5F4CE00602F1A /* BannerViewController.swift */,
-				CCDE27D427B5F4D800602F1A /* MRECViewController.swift */,
-			);
-			path = Banner;
-			sourceTree = "<group>";
-		};
-		CCDE27CE27B5490D00602F1A /* Interstitial */ = {
-			isa = PBXGroup;
-			children = (
-				CCDE27D627B5F4E100602F1A /* InterstitialViewController.swift */,
-			);
-			path = Interstitial;
-			sourceTree = "<group>";
-		};
-		CCDE27CF27B5491300602F1A /* Native */ = {
-			isa = PBXGroup;
-			children = (
-				CCD9BA0D27BA36930070B030 /* NativeView */,
-				CCDE27D827B5F4F100602F1A /* NativeAdViewController.swift */,
-				CCDE27DA27B5F4FD00602F1A /* NativeAdPlacerViewController.swift */,
-			);
-			path = Native;
-			sourceTree = "<group>";
-		};
-		CCDE27D027B5491700602F1A /* Rewarded */ = {
-			isa = PBXGroup;
-			children = (
-				CCDE27DC27B5F51000602F1A /* RewardedAdViewController.swift */,
-			);
-			path = Rewarded;
-			sourceTree = "<group>";
-		};
-		CCDE27D127B5492500602F1A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCDE27C027B5478D00602F1A /* Assets.xcassets */,
-				CCDE27C527B5478D00602F1A /* Info.plist */,
-			);
-			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CCDE27B327B5478C00602F1A /* ADXSampleSwift */ = {
+		CC4F010227D2094400847E76 /* ADXSampleSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCDE27C827B5478D00602F1A /* Build configuration list for PBXNativeTarget "ADXSampleSwift" */;
+			buildConfigurationList = CC4F011427D2094500847E76 /* Build configuration list for PBXNativeTarget "ADXSampleSwift" */;
 			buildPhases = (
-				051E3C088BF206B291D8D3C7 /* [CP] Check Pods Manifest.lock */,
-				CCDE27B027B5478C00602F1A /* Sources */,
-				CCDE27B127B5478C00602F1A /* Frameworks */,
-				CCDE27B227B5478C00602F1A /* Resources */,
-				AB051E31F154E36623557DCA /* [CP] Embed Pods Frameworks */,
-				27A50584181D14456591EB7C /* [CP] Copy Pods Resources */,
+				E90188F613A99E789CBA189D /* [CP] Check Pods Manifest.lock */,
+				CC4F00FF27D2094400847E76 /* Sources */,
+				CC4F010027D2094400847E76 /* Frameworks */,
+				CC4F010127D2094400847E76 /* Resources */,
+				BD722EF85FFF410B29F46A0B /* [CP] Embed Pods Frameworks */,
+				91C90235AE9B8D770FD331DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,7 +183,7 @@
 			);
 			name = ADXSampleSwift;
 			productName = ADXSampleSwift;
-			productReference = CCDE27B427B5478C00602F1A /* ADXSampleSwift.app */;
+			productReference = CC4F010327D2094400847E76 /* ADXSampleSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +196,7 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					CCDE27B327B5478C00602F1A = {
+					CC4F010227D2094400847E76 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -211,27 +214,61 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CCDE27B327B5478C00602F1A /* ADXSampleSwift */,
+				CC4F010227D2094400847E76 /* ADXSampleSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CCDE27B227B5478C00602F1A /* Resources */ = {
+		CC4F010127D2094400847E76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD9BA1027BA36930070B030 /* NativeAdView.xib in Resources */,
-				CCDE27C427B5478D00602F1A /* LaunchScreen.storyboard in Resources */,
-				CCDE27C127B5478D00602F1A /* Assets.xcassets in Resources */,
-				CCDE27BF27B5478C00602F1A /* Main.storyboard in Resources */,
+				CC4F012727D209FF00847E76 /* NativeAdView.xib in Resources */,
+				CC4F011227D2094500847E76 /* LaunchScreen.storyboard in Resources */,
+				CC4F010F27D2094500847E76 /* Assets.xcassets in Resources */,
+				CC4F010D27D2094400847E76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		051E3C088BF206B291D8D3C7 /* [CP] Check Pods Manifest.lock */ = {
+		91C90235AE9B8D770FD331DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD722EF85FFF410B29F46A0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90188F613A99E789CBA189D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,74 +290,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27A50584181D14456591EB7C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB051E31F154E36623557DCA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CCDE27B027B5478C00602F1A /* Sources */ = {
+		CC4F00FF27D2094400847E76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDE27D327B5F4CE00602F1A /* BannerViewController.swift in Sources */,
-				CCDE27D527B5F4D800602F1A /* MRECViewController.swift in Sources */,
-				CCDE27BC27B5478C00602F1A /* ViewController.swift in Sources */,
-				CCDE27DD27B5F51000602F1A /* RewardedAdViewController.swift in Sources */,
-				CCDE27B827B5478C00602F1A /* AppDelegate.swift in Sources */,
-				CCDE27D927B5F4F100602F1A /* NativeAdViewController.swift in Sources */,
-				CCDE27DB27B5F4FD00602F1A /* NativeAdPlacerViewController.swift in Sources */,
-				CCDE27D727B5F4E100602F1A /* InterstitialViewController.swift in Sources */,
-				CCD9BA1127BA36930070B030 /* NativeView.swift in Sources */,
+				CC4F012A27D209FF00847E76 /* BannerViewController.swift in Sources */,
+				CC4F010627D2094400847E76 /* AppDelegate.swift in Sources */,
+				CC4F012627D209FF00847E76 /* NativeAdPlacerViewController.swift in Sources */,
+				CC4F012B27D209FF00847E76 /* MRECViewController.swift in Sources */,
+				CC4F012927D209FF00847E76 /* NativeViewController.swift in Sources */,
+				CC4F012827D209FF00847E76 /* NativeAdView.swift in Sources */,
+				CC4F012E27D209FF00847E76 /* RewardedViewController.swift in Sources */,
+				CC4F012C27D209FF00847E76 /* InterstitialViewController.swift in Sources */,
+				CC4F012D27D209FF00847E76 /* MainViewController.swift in Sources */,
+				CC4F012F27D209FF00847E76 /* AdMobRewardedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCDE27BD27B5478C00602F1A /* Main.storyboard */ = {
+		CC4F010B27D2094400847E76 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCDE27BE27B5478C00602F1A /* Base */,
+				CC4F010C27D2094400847E76 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CCDE27C227B5478D00602F1A /* LaunchScreen.storyboard */ = {
+		CC4F011027D2094500847E76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCDE27C327B5478D00602F1A /* Base */,
+				CC4F011127D2094500847E76 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -328,6 +332,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CC4F011527D2094500847E76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B334811F6BE02B3575710DF /* Pods-ADXSampleSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V6UAGM9A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADXSampleSwift/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adxcorp.adxdev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC4F011627D2094500847E76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V6UAGM9A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADXSampleSwift/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adxcorp.adxdev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CCDE27C627B5478D00602F1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,85 +508,23 @@
 			};
 			name = Release;
 		};
-		CCDE27C927B5478D00602F1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B334811F6BE02B3575710DF /* Pods-ADXSampleSwift.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6V6UAGM9A4;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ADXSampleSwift/Info.plist;
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adxcorp.adxdev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CCDE27CA27B5478D00602F1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6V6UAGM9A4;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ADXSampleSwift/Info.plist;
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adxcorp.adxdev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CC4F011427D2094500847E76 /* Build configuration list for PBXNativeTarget "ADXSampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4F011527D2094500847E76 /* Debug */,
+				CC4F011627D2094500847E76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CCDE27AF27B5478C00602F1A /* Build configuration list for PBXProject "ADXSampleSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCDE27C627B5478D00602F1A /* Debug */,
 				CCDE27C727B5478D00602F1A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCDE27C827B5478D00602F1A /* Build configuration list for PBXNativeTarget "ADXSampleSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCDE27C927B5478D00602F1A /* Debug */,
-				CCDE27CA27B5478D00602F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v8t-Ij-gP4">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,18 +10,18 @@
         <!--ADXLibrarySample-->
         <scene sceneID="tVR-qd-8Av">
             <objects>
-                <viewController id="IM7-Tk-NYm" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="IM7-Tk-NYm" customClass="MainViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xoM-Cw-JV0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OAq-kF-Vhz">
-                                <rect key="frame" x="123.5" y="278" width="167" height="340"/>
+                                <rect key="frame" x="212.5" y="100" width="175" height="400"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgk-9v-W8e">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="48" minY="11" maxX="48" maxY="11"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="11" maxX="0.0" maxY="11"/>
                                         <state key="normal" title="Banner Ad">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -32,9 +30,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhq-Tf-igJ">
-                                        <rect key="frame" x="0.0" y="60" width="167" height="40"/>
+                                        <rect key="frame" x="0.0" y="60" width="175" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="48" minY="11" maxX="48" maxY="11"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="11" maxX="0.0" maxY="11"/>
                                         <state key="normal" title="MREC Ad">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -43,7 +41,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db0-WH-cbw">
-                                        <rect key="frame" x="0.0" y="120" width="167" height="40"/>
+                                        <rect key="frame" x="0.0" y="120" width="175" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="11" maxX="0.0" maxY="11"/>
                                         <state key="normal" title="Interstitial Ad">
@@ -54,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N40-mo-XrM">
-                                        <rect key="frame" x="0.0" y="180" width="167" height="40"/>
+                                        <rect key="frame" x="0.0" y="180" width="175" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="11" maxX="0.0" maxY="11"/>
                                         <state key="normal" title="Native Ad">
@@ -65,7 +63,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sc-c2-tO4">
-                                        <rect key="frame" x="0.0" y="240" width="167" height="40"/>
+                                        <rect key="frame" x="0.0" y="240" width="175" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="11" maxX="0.0" maxY="11"/>
                                         <state key="normal" title="Native AdPlacer">
@@ -76,14 +74,25 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnN-6p-4Qx">
-                                        <rect key="frame" x="0.0" y="300" width="167" height="40"/>
+                                        <rect key="frame" x="0.0" y="300" width="175" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="11" maxX="0.0" maxY="11"/>
-                                        <state key="normal" title="Rewarded Ad">
+                                        <state key="normal" title="Rewarded Ad (ADX)">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="5Db-nP-4Vk" kind="show" id="ASe-Ou-TBm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvM-G4-AXQ">
+                                        <rect key="frame" x="0.0" y="360" width="175" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="11" maxX="10" maxY="11"/>
+                                        <state key="normal" title="Rewarded Ad (AdMob)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ObA-qU-UqQ" kind="show" id="hxR-0c-d6M"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -107,7 +116,7 @@
             <objects>
                 <viewController id="l1v-9Q-ucS" customClass="BannerViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ghD-CS-hho">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Th4-pE-rJ1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,7 +132,7 @@
             <objects>
                 <viewController id="g5j-gQ-A0A" customClass="MRECViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rE4-1l-cXh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="E8Z-7h-gnD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -139,11 +148,11 @@
             <objects>
                 <viewController title="Interstitial" id="YpJ-bB-h06" customClass="InterstitialViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eu1-0j-dUd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-31-uhd">
-                                <rect key="frame" x="128.5" y="398" width="157" height="100"/>
+                                <rect key="frame" x="221.5" y="250" width="157" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-vq-EW6">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="40"/>
@@ -186,9 +195,9 @@
         <!--NativeAd-->
         <scene sceneID="QtF-jN-xIB">
             <objects>
-                <viewController title="NativeAd" id="myZ-vv-NcE" customClass="NativeAdViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="NativeAd" id="myZ-vv-NcE" customClass="NativeViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TlG-to-MX6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="0nt-Xb-hb8"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -199,16 +208,16 @@
             </objects>
             <point key="canvasLocation" x="2739" y="834"/>
         </scene>
-        <!--Rewarded Ad-->
+        <!--Rewarded Ad (ADX)-->
         <scene sceneID="Rbu-a4-xS8">
             <objects>
-                <viewController id="5Db-nP-4Vk" customClass="RewardedAdViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Db-nP-4Vk" customClass="RewardedViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YMl-gT-kXg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0yh-Tb-ez9">
-                                <rect key="frame" x="128.5" y="398" width="157" height="100"/>
+                                <rect key="frame" x="221.5" y="250" width="157" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUv-Vh-5rY">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="40"/>
@@ -242,7 +251,7 @@
                             <constraint firstItem="0yh-Tb-ez9" firstAttribute="centerY" secondItem="YMl-gT-kXg" secondAttribute="centerY" id="R2q-ah-7oY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Rewarded Ad" id="4tl-ar-rKR"/>
+                    <navigationItem key="navigationItem" title="Rewarded Ad (ADX)" id="4tl-ar-rKR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l40-4P-xsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,11 +262,11 @@
             <objects>
                 <viewController title="NativeAdPlacer" id="RIF-od-sLT" customClass="NativeAdPlacerViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QXG-nK-mF4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wef-H6-wyg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <color key="backgroundColor" red="0.94084163229999995" green="0.93933409680000002" blue="0.9656669873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V0v-g2-ZY8">
                                     <size key="itemSize" width="375" height="110"/>
@@ -267,7 +276,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="AB0-RP-N8M">
-                                        <rect key="frame" x="19.5" y="0.0" width="375" height="110"/>
+                                        <rect key="frame" x="112.5" y="0.0" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
@@ -367,6 +376,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pO-B6-Cmu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-231" y="105"/>
+        </scene>
+        <!--Rewarded Ad (AdMob)-->
+        <scene sceneID="qD5-G9-Z1S">
+            <objects>
+                <viewController id="ObA-qU-UqQ" customClass="AdMobRewardedViewController" customModule="ADXSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61Z-JP-zh9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zB7-lH-ROt">
+                                <rect key="frame" x="221.5" y="250" width="157" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-5U-IeD">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="48" minY="11" maxX="48" maxY="11"/>
+                                        <state key="normal" title="Load Ad">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadAd:" destination="ObA-qU-UqQ" eventType="touchUpInside" id="hDO-CS-B2X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPj-Gj-5Vc">
+                                        <rect key="frame" x="0.0" y="60" width="157" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="48" minY="11" maxX="48" maxY="11"/>
+                                        <state key="normal" title="Show Ad">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showAd:" destination="ObA-qU-UqQ" eventType="touchUpInside" id="8b9-5m-6fm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hkc-kc-4XP"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zB7-lH-ROt" firstAttribute="centerX" secondItem="hkc-kc-4XP" secondAttribute="centerX" id="Elt-lj-osg"/>
+                            <constraint firstItem="zB7-lH-ROt" firstAttribute="centerY" secondItem="61Z-JP-zh9" secondAttribute="centerY" id="JME-0U-j0I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rewarded Ad (AdMob)" id="sG9-z1-2f7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRl-H1-zj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4987" y="834"/>
         </scene>
     </scenes>
     <resources>
