@@ -26,6 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // ADX SDK Initialize
+        let configuration = ADXConfiguration(appId: ADX_APP_ID, gdprType: .popupLocation)
+        configuration.logLevel = .debug
+        
+        ADXSdk.sharedInstance().initialize(with: configuration) { result, consentState in
+            print("ADX SDK Initialize")
+        }
+        
         if #available(iOS 15.0, *) {
             let navigationBarAppearance = UINavigationBarAppearance()
             navigationBarAppearance.configureWithOpaqueBackground()
@@ -54,21 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 } else {
                     FBAdSettings.setAdvertiserTrackingEnabled(false)
                 }
-                
-                self.initializeSdk()
             })
-            
-        } else {
-            self.initializeSdk()
-        }
-    }
-    
-    func initializeSdk() {
-        let configuration = ADXConfiguration(appId: ADX_APP_ID, gdprType: .popupLocation)
-        configuration.logLevel = .debug
-        
-        ADXSdk.sharedInstance().initialize(with: configuration) { result, consentState in
-            print("ADX SDK Initialize")
         }
     }
 }
