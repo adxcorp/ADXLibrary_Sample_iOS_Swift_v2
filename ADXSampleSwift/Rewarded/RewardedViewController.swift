@@ -54,11 +54,11 @@ extension RewardedViewController: ADXRewardedAdDelegate {
         print("rewardedAdDidDismissScreen")
     }
     
-    func rewardedAdDidClick(_ rewwaredAd: ADXRewardedAd) {
+    func rewardedAdDidClick(_ rewardedAd: ADXRewardedAd) {
         print("rewardedAdDidClick")
     }
     
-    func rewardedAdDidRewardUser(_ rewwaredAd: ADXRewardedAd, with reward: ADXReward) {
+    func rewardedAdDidRewardUser(_ rewardedAd: ADXRewardedAd, with reward: ADXReward) {
         print("rewardedAdDidRewardUser")
     }
 }

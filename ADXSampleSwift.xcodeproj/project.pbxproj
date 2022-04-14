@@ -22,6 +22,7 @@
 		CC4F012D27D209FF00847E76 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012227D209FF00847E76 /* MainViewController.swift */; };
 		CC4F012E27D209FF00847E76 /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012427D209FF00847E76 /* RewardedViewController.swift */; };
 		CC4F012F27D209FF00847E76 /* AdMobRewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */; };
+		CCF5A2AA2806BD4B007C5018 /* AdConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5A2A92806BD4B007C5018 /* AdConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CC4F012227D209FF00847E76 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CC4F012427D209FF00847E76 /* RewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
 		CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdMobRewardedViewController.swift; sourceTree = "<group>"; };
+		CCF5A2A92806BD4B007C5018 /* AdConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdConstants.swift; sourceTree = "<group>"; };
 		DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.release.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				CC4F012027D209FF00847E76 /* Interstitial */,
 				CC4F011727D209FF00847E76 /* Native */,
 				CC4F012327D209FF00847E76 /* Rewarded */,
+				CCF5A2A92806BD4B007C5018 /* AdConstants.swift */,
 				CC4F010527D2094400847E76 /* AppDelegate.swift */,
 				CC4F012227D209FF00847E76 /* MainViewController.swift */,
 				CC4F010B27D2094400847E76 /* Main.storyboard */,
@@ -303,6 +306,7 @@
 				CC4F012B27D209FF00847E76 /* MRECViewController.swift in Sources */,
 				CC4F012927D209FF00847E76 /* NativeViewController.swift in Sources */,
 				CC4F012827D209FF00847E76 /* NativeAdView.swift in Sources */,
+				CCF5A2AA2806BD4B007C5018 /* AdConstants.swift in Sources */,
 				CC4F012E27D209FF00847E76 /* RewardedViewController.swift in Sources */,
 				CC4F012C27D209FF00847E76 /* InterstitialViewController.swift in Sources */,
 				CC4F012D27D209FF00847E76 /* MainViewController.swift in Sources */,
