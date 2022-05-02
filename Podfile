@@ -7,7 +7,7 @@ target 'ADXSampleSwift' do
   use_frameworks!
 
 # 라이브러리 전체를 포함할 경우 
-pod 'ADXLibrary', '2.1.5'
+pod 'ADXLibrary', '2.1.7'
 
 # 네이티브만 포함할 경우
 # pod 'ADXLibrary/Native', '2.1.5'
