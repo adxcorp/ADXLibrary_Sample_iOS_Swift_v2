@@ -14,7 +14,7 @@ class MRECViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        adView = ADXAdView(adUnitId: ADX_MREC_AD_UNIT_AD, adSize: ADXAdSizeMediumRectangle, rootViewController: self)
+        adView = ADXAdView(adUnitId: ADX_MREC_AD_UNIT_ID, adSize: ADXAdSizeMediumRectangle, rootViewController: self)
         adView.frame = CGRect(x: (UIScreen.main.bounds.size.width - ADXAdSizeMediumRectangle.width) / 2,
                               y: 0,
                               width: ADXAdSizeMediumRectangle.width,
