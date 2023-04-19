@@ -7,9 +7,9 @@
 
 import UIKit
 
-import ADXLibrary
 import FBAudienceNetwork
 import AppTrackingTransparency
+import ADXLibrary
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
