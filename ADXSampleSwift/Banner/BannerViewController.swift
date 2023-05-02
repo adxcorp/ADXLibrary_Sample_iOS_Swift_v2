@@ -13,15 +13,19 @@ class BannerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         adView = ADXAdView(adUnitId: ADX_BANNER_AD_UNIT_AD, adSize: ADXAdSizeBanner, rootViewController: self)
-        adView.frame = CGRect(x: (UIScreen.main.bounds.size.width - ADXAdSizeBanner.width) / 2,
-                              y: 0,
-                              width: ADXAdSizeBanner.width,
-                              height: ADXAdSizeBanner.height)
+        adView.translatesAutoresizingMaskIntoConstraints = false
         adView.delegate = self
         view.addSubview(adView)
+        NSLayoutConstraint.activate([
+            adView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            adView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+            adView.widthAnchor.constraint(equalToConstant: ADXAdSizeBanner.width),
+            adView.heightAnchor.constraint(equalToConstant: ADXAdSizeBanner.height)
+        ])
         adView.loadAd()
+        
     }
 }
 

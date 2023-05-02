@@ -13,14 +13,17 @@ class MRECViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         adView = ADXAdView(adUnitId: ADX_MREC_AD_UNIT_ID, adSize: ADXAdSizeMediumRectangle, rootViewController: self)
-        adView.frame = CGRect(x: (UIScreen.main.bounds.size.width - ADXAdSizeMediumRectangle.width) / 2,
-                              y: 0,
-                              width: ADXAdSizeMediumRectangle.width,
-                              height: ADXAdSizeMediumRectangle.height)
+        adView.translatesAutoresizingMaskIntoConstraints = false
         adView.delegate = self
         view.addSubview(adView)
+        NSLayoutConstraint.activate([
+            adView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            adView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            adView.widthAnchor.constraint(equalToConstant: ADXAdSizeMediumRectangle.width),
+            adView.heightAnchor.constraint(equalToConstant: ADXAdSizeMediumRectangle.height)
+        ])
         adView.loadAd()
     }
 }
