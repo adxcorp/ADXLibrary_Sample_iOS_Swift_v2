@@ -10,22 +10,32 @@ import ADXLibrary
 import FBAudienceNetwork
 import AppTrackingTransparency
 
+class RunCodeOnce {
+    var already: Bool = false
+    func run(block: () -> Void) {
+        guard !already else { return }
+        block()
+        already = true
+    }
+}
+
 @main
 struct ADXSampleSwiftUIApp: App {
     
     private static let appID:String = "6200fea42a918d0001000001"
-    
-    init() {
-    #if targetEnvironment(simulator)
-    #else
-        setupAdSDK()
-    #endif
-        
-    }
+    private let once = RunCodeOnce()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().onReceive(
+                NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
+                    once.run {
+                        #if targetEnvironment(simulator)
+                        #else
+                            setupAdSDK()
+                        #endif
+                    }
+                }
         }
     }
 }
