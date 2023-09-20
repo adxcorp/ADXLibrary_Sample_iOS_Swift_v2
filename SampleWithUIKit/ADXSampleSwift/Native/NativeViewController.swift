@@ -30,6 +30,21 @@ class NativeViewController: UIViewController {
         
         ADXNativeAdFactory.sharedInstance().remove(self)
     }
+    
+    public func addAdTagLabel(_ nativeAdView: UIView) {
+        let adTagView = UIView(frame: CGRect(x: 10, y: 2, width: 30, height: 20))
+        adTagView.backgroundColor = .orange
+        adTagView.layer.cornerRadius = 5
+        let adTagLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 30, height: 20))
+        adTagLabel.text = "Ad"
+        adTagLabel.textAlignment = .center
+        adTagLabel.textColor = .white
+        adTagView.addSubview(adTagLabel)
+        adTagLabel.translatesAutoresizingMaskIntoConstraints = false
+        adTagLabel.centerXAnchor.constraint(equalTo: adTagView.centerXAnchor).isActive = true
+        adTagLabel.centerYAnchor.constraint(equalTo: adTagView.centerYAnchor).isActive = true
+        nativeAdView.addSubview(adTagView)
+    }
 }
 
 extension NativeViewController: ADXNativeAdFactoryDelegate, ADXNativeAdDelegate {
