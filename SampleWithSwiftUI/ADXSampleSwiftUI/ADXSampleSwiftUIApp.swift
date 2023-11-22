@@ -32,7 +32,11 @@ struct ADXSampleSwiftUIApp: App {
                     once.run {
                         #if targetEnvironment(simulator)
                         #else
-                            setupAdSDK()
+                        // 프로그래밍 방식으로 수동으로 ATT (App Tracking Transparency) 동의 요청 할 경우에만, 아래 코드를 사용.
+                        // setupAdSDK()
+                        
+                        // 애드몹 UMP (User Messaging Platform)의 IDFA 메시지를 통한 ATT (App Tracking Transparency) 동의 요청 권장
+                        // 참조 링크: https://docs.adxcorp.kr/appendix/ump-user-messaging-platform
                         #endif
                     }
                 }
