@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // ADX SDK Initialize
-        let configuration = ADXConfiguration(appId: ADX_APP_ID, gdprType: .popupLocation)
+        let configuration = ADXConfiguration(appId: ADX_APP_ID, 
+                                             gdprType: .popupDebug,
+                                             testDevices: [])
         configuration.logLevel = .debug
         
         ADXSdk.sharedInstance().initialize(with: configuration) { result, consentState in
@@ -49,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func requestIDFA() {
-        if #available(iOS 14, *) {
+        if #available(iOS 14.5, *) {
             // ATT 알림을 통한 권한 요청
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
                 // 광고추적제한 설정 (페이스북 광고 ATE 설정)
