@@ -29,3 +29,4 @@ Pods/
 *.xcworkspace
 
 Podfile.lock
+SampleWithUIKit/.DS_Store
