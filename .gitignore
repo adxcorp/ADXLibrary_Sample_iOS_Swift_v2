@@ -30,3 +30,5 @@ Pods/
 
 Podfile.lock
 SampleWithUIKit/.DS_Store
+SampleWithSwiftUI/.DS_Store
+.DS_Store
