@@ -28,17 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("ADX SDK Initialize")
         }
         
-        if #available(iOS 15.0, *) {
-            let navigationBarAppearance = UINavigationBarAppearance()
-            navigationBarAppearance.configureWithOpaqueBackground()
-            navigationBarAppearance.backgroundColor = .white
-            navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-            
-            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
-            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
-            UINavigationBar.appearance().isTranslucent = false
-        }
-        
         return true
     }
     
