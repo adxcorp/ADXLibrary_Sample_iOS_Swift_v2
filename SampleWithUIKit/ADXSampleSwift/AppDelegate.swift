@@ -20,9 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // ADX SDK Initialize
         let configuration = ADXConfiguration(appId: ADX_APP_ID, 
-                                             gdprType: .popupDebug,
+                                             gdprType: .popupLocation,
                                              testDevices: [])
-        configuration.logLevel = .debug
         
         ADXSdk.sharedInstance().initialize(with: configuration) { result, consentState in
             print("ADX SDK Initialize")
