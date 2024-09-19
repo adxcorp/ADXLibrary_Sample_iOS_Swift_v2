@@ -1,10 +1,3 @@
-//
-//  RewardAdView.swift
-//  ADXSampleSwiftUI
-//
-//  Created by JCLEE on 2023/05/17.
-//
-
 import SwiftUI
 import ADXLibrary
 
@@ -16,14 +9,18 @@ struct RewardAdTabView: View {
     var body: some View {
         
         VStack {
+            Button("보상광고 로드") {
+                adCoordinator.loadAd()
+            }
+            .disabled(adCoordinator.isLoaded)
+            .frame(width: 150, height: 50)
+            
             Button("보상광고 보기") {
                 adCoordinator.presentAd()
-            }.frame(width: 150, height: 50)
+            }
+            .disabled(!adCoordinator.isLoaded)
+            .frame(width: 150, height: 50)
         }
-        .onAppear {
-            adCoordinator.loadAd()
-        }
-        .disabled(!adCoordinator.isLoaded)
     }
 }
 

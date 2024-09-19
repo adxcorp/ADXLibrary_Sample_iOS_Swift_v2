@@ -1,10 +1,3 @@
-//
-//  InterstialAdCoordinator.swift
-//  ADXSampleSwiftUI
-//
-//  Created by JCLEE on 2023/05/17.
-//
-
 import UIKit
 import ADXLibrary
 

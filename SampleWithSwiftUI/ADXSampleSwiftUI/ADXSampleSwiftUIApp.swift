@@ -1,10 +1,3 @@
-//
-//  ADXSampleSwiftUIApp.swift
-//  ADXSampleSwiftUI
-//
-//  Created by JCLEE on 2023/05/17.
-//
-
 import SwiftUI
 import ADXLibrary
 import FBAudienceNetwork

@@ -1,10 +1,3 @@
-//
-//  BannerAdTabView.swift
-//  ADXSampleSwiftUI
-//
-//  Created by JCLEE on 2023/05/18.
-//
-
 import SwiftUI
 
 struct BannerAdTabView: View {
