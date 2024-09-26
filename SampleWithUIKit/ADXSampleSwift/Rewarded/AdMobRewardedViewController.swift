@@ -58,8 +58,23 @@ class AdMobRewardedViewController: UIViewController {
 // MARK: - GADFullScreenContentDelegate
 extension AdMobRewardedViewController: GADFullScreenContentDelegate {
 
+    func adDidRecordImpression(_ ad: any GADFullScreenPresentingAd) {
+        print("adDidRecordImpression")
+    }
+    
+    func adDidRecordClick(_ ad: any GADFullScreenPresentingAd) {
+        print("adDidRecordImpression")
+    }
+    
     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
-        print("Rewarded ad dismissed.")
-        createAndLoadRewardedAd()
+        print("adDidDismissFullScreenContent")
+    }
+    
+    func adWillPresentFullScreenContent(_ ad: any GADFullScreenPresentingAd) {
+        print("adWillPresentFullScreenContent")
+    }
+    
+    func ad(_ ad: any GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Error) {
+        print("Rewarded ad failed to present.")
     }
 }
