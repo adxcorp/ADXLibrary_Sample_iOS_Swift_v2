@@ -11,7 +11,7 @@ import ADXLibrary
 import GoogleMobileAds
 
 class AdMobRewardedViewController: UIViewController {
-    var rewardedAd: GADRewardedAd?
+    var rewardedAd: RewardedAd?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class AdMobRewardedViewController: UIViewController {
     
     @IBAction func showAd(_ sender: Any) {
         if (rewardedAd != nil) {
-            rewardedAd?.present(fromRootViewController: self, userDidEarnRewardHandler: {
+            rewardedAd?.present(from: self, userDidEarnRewardHandler: {
                 if let reward = self.rewardedAd?.adReward {
                     print("Reward received with currency: \(reward.type), amount \(reward.amount).")
                 }
@@ -34,15 +34,15 @@ class AdMobRewardedViewController: UIViewController {
     }
     
     func createAndLoadRewardedAd() {
-        let request = GADRequest()
+        let request = Request()
         //*** GDPR
         if ADXGdprManager.sharedInstance().consentState == .denied {
-            let extras = GADExtras()
+            let extras = Extras()
             extras.additionalParameters = ["npa": "1"]
             request.register(extras)
         }
         
-        GADRewardedAd.load(withAdUnitID: ADMOB_REWARDED_AD_UNIT_ID, request: request) { (rewardedAd, error) in
+        RewardedAd.load(with: ADMOB_REWARDED_AD_UNIT_ID, request: request) { (rewardedAd, error) in
             if let error = error {
                 print("Loading failed: \(error)")
             } else {
@@ -56,25 +56,25 @@ class AdMobRewardedViewController: UIViewController {
 }
 
 // MARK: - GADFullScreenContentDelegate
-extension AdMobRewardedViewController: GADFullScreenContentDelegate {
+extension AdMobRewardedViewController: FullScreenContentDelegate {
 
-    func adDidRecordImpression(_ ad: any GADFullScreenPresentingAd) {
+    func adDidRecordImpression(_ ad: any FullScreenPresentingAd) {
         print("adDidRecordImpression")
     }
     
-    func adDidRecordClick(_ ad: any GADFullScreenPresentingAd) {
+    func adDidRecordClick(_ ad: any FullScreenPresentingAd) {
         print("adDidRecordImpression")
     }
     
-    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+    func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
         print("adDidDismissFullScreenContent")
     }
     
-    func adWillPresentFullScreenContent(_ ad: any GADFullScreenPresentingAd) {
+    func adWillPresentFullScreenContent(_ ad: any FullScreenPresentingAd) {
         print("adWillPresentFullScreenContent")
     }
     
-    func ad(_ ad: any GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Error) {
+    func ad(_ ad: any FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Error) {
         print("Rewarded ad failed to present.")
     }
 }
