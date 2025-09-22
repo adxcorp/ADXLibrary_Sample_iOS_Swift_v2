@@ -52,8 +52,7 @@ extension ADXSampleSwiftUIApp {
             // ATT 알림을 통한 권한 요청
             // 프로그래밍 방식으로 수동으로 ATT (App Tracking Transparency) 동의 요청 할 경우에만, 아래 코드를 사용.
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
-                // 광고추적제한 설정 (페이스북 광고 ATE 설정)
-                FBAdSettings.setAdvertiserTrackingEnabled(status == .authorized)
+                
             })
         }
     }

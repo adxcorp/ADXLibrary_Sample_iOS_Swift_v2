@@ -42,12 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 14.5, *) {
             // ATT 알림을 통한 권한 요청
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
-                // 광고추적제한 설정 (페이스북 광고 ATE 설정)
-                if (status == .authorized) {
-                    FBAdSettings.setAdvertiserTrackingEnabled(true)
-                } else {
-                    FBAdSettings.setAdvertiserTrackingEnabled(false)
-                }
+                
             })
         }
     }
