@@ -21,7 +21,6 @@
 		CC4F012C27D209FF00847E76 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012127D209FF00847E76 /* InterstitialViewController.swift */; };
 		CC4F012D27D209FF00847E76 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012227D209FF00847E76 /* MainViewController.swift */; };
 		CC4F012E27D209FF00847E76 /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012427D209FF00847E76 /* RewardedViewController.swift */; };
-		CC4F012F27D209FF00847E76 /* AdMobRewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */; };
 		CCF5A2AA2806BD4B007C5018 /* AdConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5A2A92806BD4B007C5018 /* AdConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		CC4F012127D209FF00847E76 /* InterstitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		CC4F012227D209FF00847E76 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CC4F012427D209FF00847E76 /* RewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
-		CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdMobRewardedViewController.swift; sourceTree = "<group>"; };
 		CCF5A2A92806BD4B007C5018 /* AdConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdConstants.swift; sourceTree = "<group>"; };
 		DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.release.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				CC4F012427D209FF00847E76 /* RewardedViewController.swift */,
-				CC4F012527D209FF00847E76 /* AdMobRewardedViewController.swift */,
 			);
 			path = Rewarded;
 			sourceTree = "<group>";
@@ -310,7 +307,6 @@
 				CC4F012E27D209FF00847E76 /* RewardedViewController.swift in Sources */,
 				CC4F012C27D209FF00847E76 /* InterstitialViewController.swift in Sources */,
 				CC4F012D27D209FF00847E76 /* MainViewController.swift in Sources */,
-				CC4F012F27D209FF00847E76 /* AdMobRewardedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
