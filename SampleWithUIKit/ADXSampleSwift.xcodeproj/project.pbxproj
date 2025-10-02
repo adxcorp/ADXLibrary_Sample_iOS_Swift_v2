@@ -336,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B334811F6BE02B3575710DF /* Pods-ADXSampleSwift.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -366,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
