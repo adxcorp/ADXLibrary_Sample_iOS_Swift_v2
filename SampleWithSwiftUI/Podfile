@@ -11,16 +11,16 @@ target 'ADXSampleSwiftUI' do
   # Pods for ADXSampleSwiftUI
 
   # 라이브러리 전체를 포함할 경우 
-  pod 'ADXLibrary', '2.8.2'
+  pod 'ADXLibrary', '2.8.3'
 
   # 네이티브만 포함할 경우
-  # pod 'ADXLibrary/Native', '2.8.2'
+  # pod 'ADXLibrary/Native', '2.8.3'
 
   # 전면/배너만 포함할 경우
-  # pod 'ADXLibrary/Standard', '2.8.2'
+  # pod 'ADXLibrary/Standard', '2.8.3'
 
   # 리워드만 포함할 경우 
-  # pod 'ADXLibrary/Rewarded', '2.8.2'
+  # pod 'ADXLibrary/Rewarded', '2.8.3'
 
 end
 
