@@ -55,12 +55,17 @@ extension NativeViewController: ADXNativeAdFactoryDelegate, ADXNativeAdDelegate 
             self.nativeAd = nativeAd
             self.nativeAd?.delegate = self
             
-            let nativeAdView = ADXNativeAdFactory.sharedInstance().getNativeAdView(ADX_NATIVE_AD_UNIT_ID)
-            nativeAdView?.frame = CGRect(x: (UIScreen.main.bounds.width - 320.0)/2,
-                                         y: 100.0,
-                                         width: 320.0,
-                                         height: 300.0)
-            self.view.addSubview(nativeAdView!)
+            if let adView = ADXNativeAdFactory.sharedInstance().getNativeAdView(ADX_NATIVE_AD_UNIT_ID) {
+                self.view.addSubview(adView)
+                adView.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint.activate([
+                    adView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+                    adView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100.0),
+                    adView.widthAnchor.constraint(equalToConstant: 320.0),
+                    adView.heightAnchor.constraint(equalToConstant: 300.0)
+                ])
+                self.view.layoutIfNeeded()
+            }
             
         } else {
             print("fail to load")
