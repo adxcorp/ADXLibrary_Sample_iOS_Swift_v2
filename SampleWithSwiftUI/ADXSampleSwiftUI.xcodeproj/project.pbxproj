@@ -16,14 +16,14 @@
 		276267F12A15D6BA0027ACD0 /* InterstitialAdTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276267F02A15D6BA0027ACD0 /* InterstitialAdTabView.swift */; };
 		276267F92A15DE8D0027ACD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276267F82A15DE8D0027ACD0 /* ContentView.swift */; };
 		276267FB2A15F3F80027ACD0 /* AdCommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276267FA2A15F3F80027ACD0 /* AdCommonUtil.swift */; };
-		2785B8D82A15BA1700B8380B /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2785B8D62A15BA1700B8380B /* NativeAdView.swift */; };
-		2785B8D92A15BA1700B8380B /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2785B8D72A15BA1700B8380B /* NativeAdView.xib */; };
+		2785B8D82A15BA1700B8380B /* ADXSampleNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2785B8D62A15BA1700B8380B /* ADXSampleNativeAdView.swift */; };
 		2785B8DC2A15BA6700B8380B /* ADXNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2785B8DB2A15BA6700B8380B /* ADXNativeAdView.swift */; };
 		27C7845E2A145F9C00C5049C /* ADXSampleSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C7845D2A145F9C00C5049C /* ADXSampleSwiftUIApp.swift */; };
 		27C784622A145F9E00C5049C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C784612A145F9E00C5049C /* Assets.xcassets */; };
 		27C784652A145F9E00C5049C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C784642A145F9E00C5049C /* Preview Assets.xcassets */; };
 		27EC5D752A1618C700FA01FF /* NativeAdTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC5D742A1618C700FA01FF /* NativeAdTabView.swift */; };
 		DCF4B1A6AD3B826B1D5EF6CA /* Pods_ADXSampleSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237F2534A9317BD5330FC4F4 /* Pods_ADXSampleSwiftUI.framework */; };
+		DFBB22D12F7DFC300096177D /* ADXSdkStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB22D02F7DFC300096177D /* ADXSdkStatusManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,7 @@
 		276267F02A15D6BA0027ACD0 /* InterstitialAdTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdTabView.swift; sourceTree = "<group>"; };
 		276267F82A15DE8D0027ACD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		276267FA2A15F3F80027ACD0 /* AdCommonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCommonUtil.swift; sourceTree = "<group>"; };
-		2785B8D62A15BA1700B8380B /* NativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdView.swift; sourceTree = "<group>"; };
-		2785B8D72A15BA1700B8380B /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		2785B8D62A15BA1700B8380B /* ADXSampleNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADXSampleNativeAdView.swift; sourceTree = "<group>"; };
 		2785B8DB2A15BA6700B8380B /* ADXNativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXNativeAdView.swift; sourceTree = "<group>"; };
 		27C7845A2A145F9C00C5049C /* ADXSampleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADXSampleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C7845D2A145F9C00C5049C /* ADXSampleSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXSampleSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		27EC5D742A1618C700FA01FF /* NativeAdTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdTabView.swift; sourceTree = "<group>"; };
 		3021A98B193C8234D5337D42 /* Pods-ADXSampleSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		BFAA91F44275F1C44E386183 /* Pods-ADXSampleSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		DFBB22D02F7DFC300096177D /* ADXSdkStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXSdkStatusManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +86,7 @@
 		2719EEDC2A14615900BB69AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DFBB22D02F7DFC300096177D /* ADXSdkStatusManager.swift */,
 				276267FA2A15F3F80027ACD0 /* AdCommonUtil.swift */,
 				2719EEDF2A14618B00BB69AB /* AdViewControllerRepresentable.swift */,
 			);
@@ -113,20 +114,11 @@
 		2785B8D32A15B53E00B8380B /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				2785B8DA2A15BA4900B8380B /* AdViewResource */,
+				2785B8D62A15BA1700B8380B /* ADXSampleNativeAdView.swift */,
 				2785B8DB2A15BA6700B8380B /* ADXNativeAdView.swift */,
 				27EC5D742A1618C700FA01FF /* NativeAdTabView.swift */,
 			);
 			path = Native;
-			sourceTree = "<group>";
-		};
-		2785B8DA2A15BA4900B8380B /* AdViewResource */ = {
-			isa = PBXGroup;
-			children = (
-				2785B8D62A15BA1700B8380B /* NativeAdView.swift */,
-				2785B8D72A15BA1700B8380B /* NativeAdView.xib */,
-			);
-			path = AdViewResource;
 			sourceTree = "<group>";
 		};
 		27C784512A145F9C00C5049C = {
@@ -247,7 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C784652A145F9E00C5049C /* Preview Assets.xcassets in Resources */,
-				2785B8D92A15BA1700B8380B /* NativeAdView.xib in Resources */,
 				27C784622A145F9E00C5049C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +254,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,9 +297,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,7 +321,8 @@
 				2719EEE22A1461A200BB69AB /* InterstialAdCoordinator.swift in Sources */,
 				276267F92A15DE8D0027ACD0 /* ContentView.swift in Sources */,
 				27EC5D752A1618C700FA01FF /* NativeAdTabView.swift in Sources */,
-				2785B8D82A15BA1700B8380B /* NativeAdView.swift in Sources */,
+				DFBB22D12F7DFC300096177D /* ADXSdkStatusManager.swift in Sources */,
+				2785B8D82A15BA1700B8380B /* ADXSampleNativeAdView.swift in Sources */,
 				2708A9AF2A147232007E613D /* ADXBannerAdView.swift in Sources */,
 				276267FB2A15F3F80027ACD0 /* AdCommonUtil.swift in Sources */,
 				27C7845E2A145F9C00C5049C /* ADXSampleSwiftUIApp.swift in Sources */,

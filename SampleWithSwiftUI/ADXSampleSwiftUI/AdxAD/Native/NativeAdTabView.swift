@@ -1,14 +1,18 @@
 import SwiftUI
 
 struct NativeAdTabView: View {
-    
     @State private var isLoaded: Bool = false
+    @ObservedObject private var sdkManager = ADXSdkStatusManager.shared
     
     var body: some View {
         List {
             ForEach(0..<20) { index in
                 if index == 2 {
-                    nativeAdCell
+                    Button {
+                        print("터치 이벤트")
+                    } label: {
+                        nativeAdCell
+                    }
                 } else {
                     normalContentCell(for: index)
                 }
@@ -19,12 +23,19 @@ struct NativeAdTabView: View {
     
     private var nativeAdCell: some View {
         VStack(alignment: .center) {
-            ADXNativeAdView(isLoaded: $isLoaded)
-                .frame(width: ADXNativeAdView.size.width,
-                       height: ADXNativeAdView.size.height)
+            if sdkManager.isInitialized {
+                ADXNativeAdView(isLoaded: $isLoaded)
+                    .frame(width: ADXNativeAdView.size.width,
+                           height: ADXNativeAdView.size.height)
+            } else {
+                Text("ADX SDK 초기화 대기 중...")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .frame(height: ADXNativeAdView.size.height)
+            }
             
-            if !isLoaded {
-                Text("광고 로딩 중")
+            if sdkManager.isInitialized && !isLoaded {
+                Text("광고 로딩 중...")
                     .font(.headline)
                     .bold()
                     .frame(height: 100)
@@ -40,11 +51,5 @@ struct NativeAdTabView: View {
             .onTapGesture {
                 print("👉 일반 콘텐츠 \(index + 1) 클릭됨")
             }
-    }
-}
-
-struct NativeAdTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        NativeAdTabView()
     }
 }

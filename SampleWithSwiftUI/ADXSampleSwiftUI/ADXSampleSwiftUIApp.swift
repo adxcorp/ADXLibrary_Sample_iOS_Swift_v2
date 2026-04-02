@@ -36,14 +36,16 @@ struct ADXSampleSwiftUIApp: App {
 extension ADXSampleSwiftUIApp {
     
     func initializeAdSDK() {
-        let configuration = ADXConfiguration(appId: ADXSampleSwiftUIApp.appID, gdprType: .popupLocation)
-        ADXSdk.sharedInstance().initialize(with: configuration) { result, consentState in
-            print("ADX SDK Initialize: \(result)")
-            // 프로그래밍 방식으로 수동으로 ATT (App Tracking Transparency) 동의 요청 할 경우에만, 아래 코드를 사용.
-            // requestIDFA()
-            
-            // 애드몹 UMP (User Messaging Platform)의 IDFA 메시지를 통한 ATT (App Tracking Transparency) 동의 요청 권장
-            // 참조 링크: https://docs.adxcorp.kr/appendix/ump-user-messaging-platform
+        DispatchQueue.global().async {
+            let configuration = ADXConfiguration(appId: ADXSampleSwiftUIApp.appID, gdprType: .popupLocation)
+            ADXSdk.sharedInstance().initialize(with: configuration) { result, consentState in
+                print("ADX SDK Initialize: \(result)")
+                // 프로그래밍 방식으로 수동으로  ATT (App Tracking Transparency) 동의 요청 할 경우에만, 아래 코드를 사용.
+                // requestIDFA()
+                
+                // 애드몹 UMP (User Messaging Platform)의 IDFA 메시지를 통한 ATT (App Tracking Transparency) 동의 요청 권장
+                // 참조 링크: https://docs.adxcorp.kr/appendix/ump-user-messaging-platform
+            }
         }
     }
     
