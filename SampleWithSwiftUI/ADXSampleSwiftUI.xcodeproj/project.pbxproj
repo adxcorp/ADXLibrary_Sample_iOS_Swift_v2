@@ -23,6 +23,7 @@
 		27C784652A145F9E00C5049C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C784642A145F9E00C5049C /* Preview Assets.xcassets */; };
 		27EC5D752A1618C700FA01FF /* NativeAdTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC5D742A1618C700FA01FF /* NativeAdTabView.swift */; };
 		DCF4B1A6AD3B826B1D5EF6CA /* Pods_ADXSampleSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237F2534A9317BD5330FC4F4 /* Pods_ADXSampleSwiftUI.framework */; };
+		DF01AA2C2F84A02800D218EE /* UIViewController+StoreKitGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01AA2B2F84A02800D218EE /* UIViewController+StoreKitGuard.swift */; };
 		DFBB22D12F7DFC300096177D /* ADXSdkStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB22D02F7DFC300096177D /* ADXSdkStatusManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		27EC5D742A1618C700FA01FF /* NativeAdTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdTabView.swift; sourceTree = "<group>"; };
 		3021A98B193C8234D5337D42 /* Pods-ADXSampleSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		BFAA91F44275F1C44E386183 /* Pods-ADXSampleSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwiftUI/Pods-ADXSampleSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		DF01AA2B2F84A02800D218EE /* UIViewController+StoreKitGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoreKitGuard.swift"; sourceTree = "<group>"; };
 		DFBB22D02F7DFC300096177D /* ADXSdkStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXSdkStatusManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				DFBB22D02F7DFC300096177D /* ADXSdkStatusManager.swift */,
 				276267FA2A15F3F80027ACD0 /* AdCommonUtil.swift */,
 				2719EEDF2A14618B00BB69AB /* AdViewControllerRepresentable.swift */,
+				DF01AA2B2F84A02800D218EE /* UIViewController+StoreKitGuard.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				27C7845E2A145F9C00C5049C /* ADXSampleSwiftUIApp.swift in Sources */,
 				276267EF2A15D67A0027ACD0 /* RewardAdTabView.swift in Sources */,
 				276267ED2A15D62A0027ACD0 /* BannerAdTabView.swift in Sources */,
+				DF01AA2C2F84A02800D218EE /* UIViewController+StoreKitGuard.swift in Sources */,
 				276267F12A15D6BA0027ACD0 /* InterstitialAdTabView.swift in Sources */,
 				2719EEE02A14618B00BB69AB /* AdViewControllerRepresentable.swift in Sources */,
 				2785B8DC2A15BA6700B8380B /* ADXNativeAdView.swift in Sources */,

@@ -18,6 +18,10 @@ struct ADXSampleSwiftUIApp: App {
     private static let appID:String = "6200fea42a918d0001000001"
     private let once = RunCodeOnce()
     
+    init() {
+        UIViewController.installStoreKitGuard()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView().onReceive(
