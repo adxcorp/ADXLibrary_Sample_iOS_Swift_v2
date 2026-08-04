@@ -53,13 +53,37 @@ extension ADXSampleSwiftUIApp {
         }
     }
     
-    func requestIDFA() {
-        if #available(iOS 14.5, *) {
-            // ATT 알림을 통한 권한 요청
-            // 프로그래밍 방식으로 수동으로 ATT (App Tracking Transparency) 동의 요청 할 경우에만, 아래 코드를 사용.
-            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
-                
-            })
+    func requestTrackingPermission(completion: @escaping (Bool) -> Void) {
+        guard #available(iOS 14, *) else {
+            return DispatchQueue.main.async { completion(true) }
+        }
+        let currentStatus = ATTrackingManager.trackingAuthorizationStatus
+        if currentStatus == .authorized {
+            return DispatchQueue.main.async { completion(true) }
+        } else if currentStatus == .denied || currentStatus == .restricted {
+            return DispatchQueue.main.async { completion(false) }
+        }
+        
+        func request() {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                DispatchQueue.main.async { completion(status == .authorized) }
+            }
+        }
+        if UIApplication.shared.applicationState == .active {
+            request()
+            return
+        }
+        var observer: NSObjectProtocol?
+        observer = NotificationCenter.default.addObserver(
+            forName: UIApplication.didBecomeActiveNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            if let obs = observer {
+                NotificationCenter.default.removeObserver(obs)
+                observer = nil
+                request()
+            }
         }
     }
     
