@@ -13,7 +13,6 @@
 		CC4F010F27D2094500847E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4F010E27D2094500847E76 /* Assets.xcassets */; };
 		CC4F011227D2094500847E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4F011027D2094500847E76 /* LaunchScreen.storyboard */; };
 		CC4F012627D209FF00847E76 /* NativeAdPlacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011827D209FF00847E76 /* NativeAdPlacerViewController.swift */; };
-		CC4F012727D209FF00847E76 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4F011A27D209FF00847E76 /* NativeAdView.xib */; };
 		CC4F012827D209FF00847E76 /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011B27D209FF00847E76 /* NativeAdView.swift */; };
 		CC4F012927D209FF00847E76 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011C27D209FF00847E76 /* NativeViewController.swift */; };
 		CC4F012A27D209FF00847E76 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F011E27D209FF00847E76 /* BannerViewController.swift */; };
@@ -33,7 +32,6 @@
 		CC4F011127D2094500847E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4F011327D2094500847E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4F011827D209FF00847E76 /* NativeAdPlacerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdPlacerViewController.swift; sourceTree = "<group>"; };
-		CC4F011A27D209FF00847E76 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
 		CC4F011B27D209FF00847E76 /* NativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdView.swift; sourceTree = "<group>"; };
 		CC4F011C27D209FF00847E76 /* NativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		CC4F011E27D209FF00847E76 /* BannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				CC4F011B27D209FF00847E76 /* NativeAdView.swift */,
-				CC4F011A27D209FF00847E76 /* NativeAdView.xib */,
 			);
 			path = NativeAdView;
 			sourceTree = "<group>";
@@ -224,7 +221,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4F012727D209FF00847E76 /* NativeAdView.xib in Resources */,
 				CC4F011227D2094500847E76 /* LaunchScreen.storyboard in Resources */,
 				CC4F010F27D2094500847E76 /* Assets.xcassets in Resources */,
 				CC4F010D27D2094400847E76 /* Main.storyboard in Resources */,

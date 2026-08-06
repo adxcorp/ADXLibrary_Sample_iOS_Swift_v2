@@ -8,169 +8,142 @@
 import UIKit
 import ADXLibrary
 
-final class ADXSampleNativeAdView: UIView {
+class ADXSampleNativeAdView: UIView {
+    var titleLabel: UILabel!
+    var mainTextLabel: UILabel!
+    var callToActionButton: UIButton!
+    var iconImageView: UIImageView!
+    var privacyInformationIconImageView: UIImageView!
+    var mainImageView: UIImageView!
 
-    private let containerView = UIView()
-
-    private let textStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.spacing = 4
-        stackView.alignment = .fill
-        stackView.distribution = .fill
-        return stackView
-    }()
-
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 15, weight: .bold)
-        label.textColor = .black
-        label.numberOfLines = 1
-        return label
-    }()
-
-    private let mainTextLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 15, weight: .regular)
-        label.textColor = .black
-        label.numberOfLines = 2
-        return label
-    }()
-
-    private let callToActionButton: UIButton = {
-        var button = UIButton(type: .system)
-        let color = UIColor.gray
-        button.titleLabel?.font = .systemFont(ofSize: 13, weight: .regular)
-        button.setTitleColor(color, for: .normal)
-        button.contentHorizontalAlignment = .leading
-        return button
-    }()
-
-    private let iconImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleToFill
-        imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 8
-        return imageView
-    }()
-    
-    private let mainImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleToFill
-        imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 8
-        return imageView
-    }()
-
-    private let privacyInformationIconImageView = UIImageView()
-
-    private let adTagContainer: UIView = {
-        let view = UIView()
-        view.backgroundColor = .lightGray
-        view.clipsToBounds = true
-        return view
-    }()
-
-    private let adTag: UILabel = {
-        let label = UILabel()
-        label.text = "광고"
-        label.font = .systemFont(ofSize: 11, weight: .bold)
-        label.textColor = .gray
-        label.textAlignment = .center
-        return label
-    }()
-
-    init() {
-        super.init(frame: .zero)
-        setupLayout()
+    convenience init() {
+        self.init(frame: .zero)
     }
 
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupLayout()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupSubviews()
     }
 
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        adTagContainer.layer.cornerRadius = (adTag.intrinsicContentSize.height + 4) / 2
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupSubviews()
     }
-}
 
-// MARK: - Layout
-extension ADXSampleNativeAdView {
+    func setupSubviews() {
+        clipsToBounds = true
+        backgroundColor = .white
 
-    private func setupLayout() {
-        adTagContainer.addSubview(adTag)
-        textStackView.addArrangedSubview(titleLabel)
-        textStackView.addArrangedSubview(mainTextLabel)
+        let iconImageView = UIImageView()
+        iconImageView.isUserInteractionEnabled = false
+        iconImageView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(iconImageView)
+        self.iconImageView = iconImageView
 
-        [
-            adTagContainer, callToActionButton,
-            textStackView,
-            iconImageView, mainImageView
-        ].forEach {
-            containerView.addSubview($0)
-        }
+        let titleLabel = UILabel()
+        titleLabel.isUserInteractionEnabled = false
+        titleLabel.text = "Title"
+        titleLabel.textColor = .black
+        titleLabel.font = .systemFont(ofSize: 15)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(titleLabel)
+        self.titleLabel = titleLabel
+
+        let callToActionButton = UIButton(type: .system)
+        callToActionButton.contentHorizontalAlignment = .left
+        callToActionButton.setTitle("Call To Action", for: .normal)
+        callToActionButton.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(callToActionButton)
+        self.callToActionButton = callToActionButton
+
+        let privacyInformationIconImageView = UIImageView()
+        privacyInformationIconImageView.isUserInteractionEnabled = false
+        privacyInformationIconImageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(privacyInformationIconImageView)
-        addSubview(containerView)
+        self.privacyInformationIconImageView = privacyInformationIconImageView
 
-        [containerView, textStackView, titleLabel, mainTextLabel, adTagContainer, adTag,
-         callToActionButton, iconImageView, mainImageView, privacyInformationIconImageView].forEach {
-            $0.translatesAutoresizingMaskIntoConstraints = false
-        }
+        let mainImageView = UIImageView()
+        mainImageView.isUserInteractionEnabled = false
+        mainImageView.clipsToBounds = true
+        mainImageView.contentMode = .scaleAspectFill
+        mainImageView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(mainImageView)
+        self.mainImageView = mainImageView
+
+        let mainTextLabel = UILabel()
+        mainTextLabel.isUserInteractionEnabled = false
+        mainTextLabel.text = "Main"
+        mainTextLabel.textColor = .black
+        mainTextLabel.font = .systemFont(ofSize: 14)
+        mainTextLabel.numberOfLines = 0
+        mainTextLabel.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(mainTextLabel)
+        self.mainTextLabel = mainTextLabel
+
+        let adTagView = UIView()
+        adTagView.backgroundColor = .systemOrange
+        adTagView.layer.cornerRadius = 5
+        adTagView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(adTagView)
+
+        let adTagLabel = UILabel()
+        adTagLabel.isUserInteractionEnabled = false
+        adTagLabel.text = "Ad"
+        adTagLabel.textAlignment = .center
+        adTagLabel.textColor = .white
+        adTagLabel.font = .systemFont(ofSize: 17)
+        adTagLabel.translatesAutoresizingMaskIntoConstraints = false
+        adTagView.addSubview(adTagLabel)
 
         NSLayoutConstraint.activate([
-            // containerView
-            containerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
-            containerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
-            containerView.topAnchor.constraint(equalTo: topAnchor),
-            containerView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            // Icon Image View
+            iconImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            iconImageView.topAnchor.constraint(equalTo: topAnchor, constant: 24),
+            iconImageView.widthAnchor.constraint(equalToConstant: 60),
+            iconImageView.widthAnchor.constraint(equalTo: iconImageView.heightAnchor, multiplier: 1),
 
-            // mainImageView
-            mainImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16),
-            mainImageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-            mainImageView.widthAnchor.constraint(equalToConstant: 120),
-            mainImageView.heightAnchor.constraint(equalToConstant: 120),
+            // Title Label
+            titleLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 10),
+            titleLabel.topAnchor.constraint(equalTo: iconImageView.topAnchor),
 
-            // textStackView
-            textStackView.topAnchor.constraint(equalTo: mainImageView.bottomAnchor, constant: 16),
-            textStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
-            textStackView.trailingAnchor.constraint(equalTo: iconImageView.leadingAnchor, constant: -16),
+            // Privacy Information Icon Image View
+            privacyInformationIconImageView.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 5),
+            privacyInformationIconImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            privacyInformationIconImageView.topAnchor.constraint(equalTo: topAnchor, constant: 24),
+            privacyInformationIconImageView.widthAnchor.constraint(equalToConstant: 20),
+            privacyInformationIconImageView.widthAnchor.constraint(equalTo: privacyInformationIconImageView.heightAnchor, multiplier: 1),
 
-            // iconImageView
-            iconImageView.centerYAnchor.constraint(equalTo: textStackView.centerYAnchor),
-            iconImageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            iconImageView.widthAnchor.constraint(equalToConstant: 72),
-            iconImageView.heightAnchor.constraint(equalToConstant: 72),
+            // Call To Action Button
+            callToActionButton.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            callToActionButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
+            callToActionButton.bottomAnchor.constraint(equalTo: iconImageView.bottomAnchor),
+            callToActionButton.heightAnchor.constraint(equalToConstant: 30),
+            trailingAnchor.constraint(greaterThanOrEqualTo: callToActionButton.trailingAnchor, constant: 10),
 
-            // adTagContainer
-            adTagContainer.topAnchor.constraint(greaterThanOrEqualTo: textStackView.bottomAnchor, constant: 10),
-            adTagContainer.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -16),
-            adTagContainer.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            // Main Image View
+            mainImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            mainImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            mainImageView.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 10),
+            mainImageView.widthAnchor.constraint(equalTo: mainImageView.heightAnchor, multiplier: 2),
 
-            // adTag
-            adTag.topAnchor.constraint(equalTo: adTagContainer.topAnchor, constant: 2),
-            adTag.leadingAnchor.constraint(equalTo: adTagContainer.leadingAnchor, constant: 6),
-            adTag.bottomAnchor.constraint(equalTo: adTagContainer.bottomAnchor, constant: -2),
-            adTag.trailingAnchor.constraint(equalTo: adTagContainer.trailingAnchor, constant: -6),
+            // Main Text Label
+            mainTextLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            mainTextLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            mainTextLabel.topAnchor.constraint(equalTo: mainImageView.bottomAnchor, constant: 5),
+            mainTextLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
 
-            // callToActionButton
-            callToActionButton.centerYAnchor.constraint(equalTo: adTagContainer.centerYAnchor),
-            callToActionButton.leadingAnchor.constraint(equalTo: adTagContainer.trailingAnchor, constant: 4),
-            callToActionButton.trailingAnchor.constraint(lessThanOrEqualTo: iconImageView.leadingAnchor, constant: -16),
-
-            // privacyInformationIconImageView
-            privacyInformationIconImageView.topAnchor.constraint(equalTo: topAnchor, constant: 2),
-            privacyInformationIconImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -2),
-            privacyInformationIconImageView.widthAnchor.constraint(equalToConstant: 16),
-            privacyInformationIconImageView.heightAnchor.constraint(equalToConstant: 16),
+            // AdTag View
+            adTagView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            adTagView.topAnchor.constraint(equalTo: topAnchor, constant: 2),
+            adTagView.widthAnchor.constraint(equalToConstant: 30),
+            adTagView.heightAnchor.constraint(equalToConstant: 20),
+            adTagLabel.centerXAnchor.constraint(equalTo: adTagView.centerXAnchor),
+            adTagLabel.centerYAnchor.constraint(equalTo: adTagView.centerYAnchor),
         ])
     }
 }
 
-// MARK: - ADXNativeAdRendering
 extension ADXSampleNativeAdView: ADXNativeAdRendering {
-
     func nativeMainTextLabel() -> UILabel! {
         return self.mainTextLabel
     }
@@ -187,11 +160,11 @@ extension ADXSampleNativeAdView: ADXNativeAdRendering {
         return self.iconImageView
     }
 
-    func nativePrivacyInformationIconImageView() -> UIImageView! {
-        return self.privacyInformationIconImageView
-    }
-    
     func nativeMainImageView() -> UIImageView! {
         return self.mainImageView
+    }
+
+    func nativePrivacyInformationIconImageView() -> UIImageView! {
+        return self.privacyInformationIconImageView
     }
 }

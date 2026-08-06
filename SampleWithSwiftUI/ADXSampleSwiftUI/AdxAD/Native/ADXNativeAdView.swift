@@ -5,7 +5,7 @@ struct ADXNativeAdView: UIViewControllerRepresentable {
     
     @Binding var isLoaded: Bool
     
-    static let size:CGSize = CGSize(width: 390, height: 250)
+    static let size:CGSize = CGSize(width: 390, height: 300)
     private let unitId:String = "6200fefc2a918d0001000009"
     private let nativeAdViewController = UIViewController()
     
