@@ -14,8 +14,6 @@ import ADXLibrary
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var window: UIWindow?
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // ADX SDK Initialize
@@ -28,14 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         return true
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // 프로그래밍 방식으로 수동으로 ATT (App Tracking Transparency) 동의 요청 할 경우에만, 아래 코드를 사용.
-        // requestIDFA()
-        
-        // 애드몹 UMP (User Messaging Platform)의 IDFA 메시지를 통한 ATT (App Tracking Transparency) 동의 요청 권장
-        // 참조 링크: https://docs.adxcorp.kr/appendix/ump-user-messaging-platform
     }
     
     func requestTrackingPermission(completion: @escaping (Bool) -> Void) {

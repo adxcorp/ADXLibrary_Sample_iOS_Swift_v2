@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64A9A06FDFBFA5A8324A008D /* Pods_ADXSampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */; };
+		A30C00010000000000000001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C00010000000000000002 /* SceneDelegate.swift */; };
 		CC4F010627D2094400847E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F010527D2094400847E76 /* AppDelegate.swift */; };
 		CC4F010D27D2094400847E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4F010B27D2094400847E76 /* Main.storyboard */; };
 		CC4F010F27D2094500847E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4F010E27D2094500847E76 /* Assets.xcassets */; };
@@ -21,10 +21,14 @@
 		CC4F012D27D209FF00847E76 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012227D209FF00847E76 /* MainViewController.swift */; };
 		CC4F012E27D209FF00847E76 /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4F012427D209FF00847E76 /* RewardedViewController.swift */; };
 		CCF5A2AA2806BD4B007C5018 /* AdConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5A2A92806BD4B007C5018 /* AdConstants.swift */; };
+		F5BCF233F4B3D95DCD814B5D /* Pods_ADXSampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814A3D857F42684B026575F9 /* Pods_ADXSampleSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B334811F6BE02B3575710DF /* Pods-ADXSampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		6914823D66785583726D5455 /* Pods-ADXSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.release.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		80979F9BA81C30028DD7EC66 /* Pods-ADXSampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		814A3D857F42684B026575F9 /* Pods_ADXSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30C00010000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CC4F010327D2094400847E76 /* ADXSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADXSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4F010527D2094400847E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4F010C27D2094400847E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,8 +44,6 @@
 		CC4F012227D209FF00847E76 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CC4F012427D209FF00847E76 /* RewardedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
 		CCF5A2A92806BD4B007C5018 /* AdConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdConstants.swift; sourceTree = "<group>"; };
-		DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXSampleSwift.release.xcconfig"; path = "Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
-		FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +51,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A9A06FDFBFA5A8324A008D /* Pods_ADXSampleSwift.framework in Frameworks */,
+				F5BCF233F4B3D95DCD814B5D /* Pods_ADXSampleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8AB786D7EBFA2643BD314064 /* Frameworks */ = {
+		021A00CBDBB2D3F8A13E3953 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAB3A4BCA2A2EE9E54945156 /* Pods_ADXSampleSwift.framework */,
+				814A3D857F42684B026575F9 /* Pods_ADXSampleSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -67,8 +69,8 @@
 		A254C8C9B81FF648458FFE46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2B334811F6BE02B3575710DF /* Pods-ADXSampleSwift.debug.xcconfig */,
-				DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */,
+				80979F9BA81C30028DD7EC66 /* Pods-ADXSampleSwift.debug.xcconfig */,
+				6914823D66785583726D5455 /* Pods-ADXSampleSwift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -82,6 +84,7 @@
 				CC4F012327D209FF00847E76 /* Rewarded */,
 				CCF5A2A92806BD4B007C5018 /* AdConstants.swift */,
 				CC4F010527D2094400847E76 /* AppDelegate.swift */,
+				A30C00010000000000000002 /* SceneDelegate.swift */,
 				CC4F012227D209FF00847E76 /* MainViewController.swift */,
 				CC4F010B27D2094400847E76 /* Main.storyboard */,
 				CC4F013027D20A1100847E76 /* Support Files */,
@@ -148,7 +151,7 @@
 				CC4F010427D2094400847E76 /* ADXSampleSwift */,
 				CCDE27B527B5478C00602F1A /* Products */,
 				A254C8C9B81FF648458FFE46 /* Pods */,
-				8AB786D7EBFA2643BD314064 /* Frameworks */,
+				021A00CBDBB2D3F8A13E3953 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,12 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC4F011427D2094500847E76 /* Build configuration list for PBXNativeTarget "ADXSampleSwift" */;
 			buildPhases = (
-				E90188F613A99E789CBA189D /* [CP] Check Pods Manifest.lock */,
+				E5A48AC25DA57A66ECC98DD7 /* [CP] Check Pods Manifest.lock */,
 				CC4F00FF27D2094400847E76 /* Sources */,
 				CC4F010027D2094400847E76 /* Frameworks */,
 				CC4F010127D2094400847E76 /* Resources */,
-				BD722EF85FFF410B29F46A0B /* [CP] Embed Pods Frameworks */,
-				91C90235AE9B8D770FD331DF /* [CP] Copy Pods Resources */,
+				51EC3F3DBA389F9A5A4FB81F /* [CP] Embed Pods Frameworks */,
+				3448691F362A6943A7997B92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,7 +233,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		91C90235AE9B8D770FD331DF /* [CP] Copy Pods Resources */ = {
+		3448691F362A6943A7997B92 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,16 +241,20 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BD722EF85FFF410B29F46A0B /* [CP] Embed Pods Frameworks */ = {
+		51EC3F3DBA389F9A5A4FB81F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,16 +262,20 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXSampleSwift/Pods-ADXSampleSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E90188F613A99E789CBA189D /* [CP] Check Pods Manifest.lock */ = {
+		E5A48AC25DA57A66ECC98DD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,6 +306,7 @@
 			files = (
 				CC4F012A27D209FF00847E76 /* BannerViewController.swift in Sources */,
 				CC4F010627D2094400847E76 /* AppDelegate.swift in Sources */,
+				A30C00010000000000000001 /* SceneDelegate.swift in Sources */,
 				CC4F012627D209FF00847E76 /* NativeAdPlacerViewController.swift in Sources */,
 				CC4F012B27D209FF00847E76 /* MRECViewController.swift in Sources */,
 				CC4F012927D209FF00847E76 /* NativeViewController.swift in Sources */,
@@ -330,7 +342,7 @@
 /* Begin XCBuildConfiguration section */
 		CC4F011527D2094500847E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B334811F6BE02B3575710DF /* Pods-ADXSampleSwift.debug.xcconfig */;
+			baseConfigurationReference = 80979F9BA81C30028DD7EC66 /* Pods-ADXSampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,7 +354,6 @@
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -361,7 +372,7 @@
 		};
 		CC4F011627D2094500847E76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA743574EF5A396F5CAEE258 /* Pods-ADXSampleSwift.release.xcconfig */;
+			baseConfigurationReference = 6914823D66785583726D5455 /* Pods-ADXSampleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -373,7 +384,6 @@
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
